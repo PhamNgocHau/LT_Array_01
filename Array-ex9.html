@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = [];
+    for (let i = 0; i < 10; i++) {
+        a.push(prompt('Nhap Phan tu mang a: '));
+    }
+    document.write('Array a: ' + a + '<br>' + '<br>')
+    for (let j = 0; j < 10; j++) {
+        b.push(prompt('Nhap phan tu mang b: '));
+    }
+    document.write('Array b: ' + b + '<br>' + '<br>')
+    let c = a.concat(b);
+    document.write('New Array concat: ' + c);
+</script>
+</body>
+</html>

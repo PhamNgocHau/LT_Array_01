@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<p>
+    Bài 3- Viết chương trình khởi tạo mảng số nguyên. Hiển hiện giá trị lớn nhất trong mảng đó. In ra giá trị trung bình
+    của các phần tử trong mảng.
+</p>
+<script>
+    let x = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+    let sum = 0;
+    let max = x[0];
+    let index = 0;
+    for (let i = 0; i < x.length; i++) {
+        if (x[i] > max) {
+            max = x[i];
+            index = i;
+        }
+    }
+    document.write('Max = ' + max + ' at Index = ' + 'x[' + index + ']' + '<br>' + '<br>');
+    for (let i = 0; i < 10; i++) {
+        sum += x[i];
+    }
+    sum = sum / 10;
+    document.write('Diem trung binh : ' + sum);
+</script>
+</body>
+</html>
