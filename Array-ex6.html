@@ -7,19 +7,23 @@
 <body>
 <script>
     let array = [];
-    let index = 0;
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 3; i++) {
         array.push(prompt('Nhap phan tu vao mang: '));
     }
-    let v = array.push(prompt('Nhap phan tu vao mang: '));
-    for (let i = 0; i < 10; i++) {
-        if (index[i] === 'v') {
-            document.write('V is in the array' + '<br>');
-        } else {
-            document.write('V is not in the array' + '<br>');
+    let v = (prompt('Nhap them 1 so: '));
+    let check = true;
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === v) {
+            check = false;
         }
     }
-
+    document.write(array + '<br>');
+    document.write(v + '<br>');
+    if(check){
+        document.write('V is not in the array');
+    }else {
+        document.write('V is in the array');
+    }
 </script>
 </body>
 </html>
