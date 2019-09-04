@@ -7,17 +7,16 @@
 <body>
 <script>
     let array = [];
-    let index = 0;
-    for (let i = 0; i < 10; i++) {
+    for (let i = 0; i < 5; i++) {
         array.push(prompt('Nhap phan tu vao mang: '));
     }
-    let v = array.push(prompt('Nhap phan tu vao mang: '));
-    for (let i = 0; i < 10; i++) {
-        if (index[i] === v) {
-            array.splice(index[i], 1);
+    let v = prompt('Nhap v: ');
+    for (let i = 0; i < array.length; i++) {
+        if (array[i] === v) {
+            array.splice(i, 1);
+            array.push('0');
         }
     }
-    array.push('0');
     document.write(array);
 </script>
 </body>
